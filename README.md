@@ -1,2 +1,39 @@
-# -Arch-Install-and-Setup-Documentation
-#The first thing I did was read the Arch Wiki. I installed and downloaded the archlinux-2025.11.01-x86_64.iso file, uploaded it, and created my virtual machine. I ran into a problem right from the start. I didn't set enough memory, so I had to restart my VM right away. I changed the settings, and after getting the internet connection, I started installation. I got to disk formatting and setup; I partitioned and formatted the disk and mounted it—the installation process allowed for the package installation for the new system. I configured my timezone with timedatectl set-timezone America/New_York and created an administrator user with my name passwd useradd -m -G wheel josue passwd josue Then I did the same for Codi's username. From there, I could start installing the GUI packages. I encountered some issues where some of the packages didn't install completely, but I was able to reinstall them and finish the installation.. I also created six custom aliases in my shell configuration to make command-line navigation easier. Two of these aliases were alias ll='ls -lh' and alias la='ls -A'. The ll alias displays files in a long, human-readable format, while la lists all files, including hidden ones.
+# Arch Linux Installation & System Configuration
+
+A hands-on Linux administration lab documenting an Arch Linux installation in a virtual machine, from initial troubleshooting through desktop setup and shell customization.
+
+## Skills demonstrated
+
+- Virtual machine resource planning and troubleshooting
+- Network connectivity verification
+- Disk partitioning, formatting, and mounting
+- Base system and package installation
+- Time zone and user account configuration
+- Administrative access through the `wheel` group
+- Desktop environment setup
+- Shell productivity customization
+
+## Implementation summary
+
+1. Reviewed the Arch Wiki and downloaded the Arch Linux installation image.
+2. Created the virtual machine and corrected an initial memory-allocation issue.
+3. Established network connectivity.
+4. Partitioned, formatted, and mounted the virtual disk.
+5. Installed the base system and required packages.
+6. Configured the system time zone.
+7. Created local user accounts and assigned administrative access.
+8. Installed GUI packages, resolving incomplete package-installation issues.
+9. Added shell aliases to improve command-line navigation.
+
+## Example shell aliases
+
+```bash
+alias ll='ls -lh'
+alias la='ls -A'
+```
+
+`ll` displays a detailed, human-readable file listing. `la` includes hidden files.
+
+## Key takeaway
+
+This project strengthened my ability to follow technical documentation, diagnose configuration problems, and build a working Linux environment from the command line.
